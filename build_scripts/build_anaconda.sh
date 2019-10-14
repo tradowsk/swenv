@@ -10,7 +10,7 @@ mkdir -p ${UBCESLAB_SWENV_PREFIX:?undefined}/sourcesdir/anaconda
 (cd $UBCESLAB_SWENV_PREFIX/sourcesdir/anaconda
 
 if [ ! -f Miniconda-3.8.3-Linux-x86_64.sh ]; then
-  wget http://repo.continuum.io/miniconda/Miniconda-3.8.3-Linux-x86_64.sh
+  wget http://repo.continuum.io/miniconda/Miniconda-3.8.3-Linux-x86_64.sh --no-check-certificate
 fi
 )
 

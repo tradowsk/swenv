@@ -9,7 +9,7 @@ mkdir -p ${UBCESLAB_SWENV_PREFIX:?undefined}/sourcesdir/gmp
 
 (cd $UBCESLAB_SWENV_PREFIX/sourcesdir/gmp
 if [ ! -f gmp-$GMP_VERSION.tar.bz2 ]; then
-  wget https://ftp.gnu.org/gnu/gmp/gmp-$GMP_VERSION.tar.bz2
+  wget https://ftp.gnu.org/gnu/gmp/gmp-$GMP_VERSION.tar.bz2 --no-check-certificate
 fi
 )
 

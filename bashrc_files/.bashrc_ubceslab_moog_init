@@ -1,0 +1,5 @@
+export UBCESLAB_SYSTEMTYPE="moog"
+
+export UBCESLAB_SWENV_PREFIX="/mnt/c/Users/tadowski/software"
+
+export NPROC=6

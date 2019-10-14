@@ -17,19 +17,19 @@ mkdir -p ${UBCESLAB_SWENV_PREFIX:?undefined}/sourcesdir/autotools
 (cd ${UBCESLAB_SWENV_PREFIX:?undefined}/sourcesdir/autotools
 
 if [ ! -f m4-$M4_VERSION.tar.gz ]; then
-  wget http://ftp.gnu.org/gnu/m4/m4-$M4_VERSION.tar.gz 
+  wget http://ftp.gnu.org/gnu/m4/m4-$M4_VERSION.tar.gz --no-check-certificate 
 fi
 
 if [ ! -f autoconf-$AUTOCONF_VERSION.tar.gz ]; then
-  wget http://ftp.gnu.org/gnu/autoconf/autoconf-$AUTOCONF_VERSION.tar.gz
+  wget http://ftp.gnu.org/gnu/autoconf/autoconf-$AUTOCONF_VERSION.tar.gz --no-check-certificate
 fi
 
 if [ ! -f automake-$AUTOMAKE_VERSION.tar.gz ]; then
-  wget http://ftp.gnu.org/gnu/automake/automake-$AUTOMAKE_VERSION.tar.gz
+  wget http://ftp.gnu.org/gnu/automake/automake-$AUTOMAKE_VERSION.tar.gz --no-check-certificate
 fi
 
 if [ ! -f libtool-$LIBTOOL_VERSION.tar.gz ]; then
-  wget http://ftp.gnu.org/gnu/libtool/libtool-$LIBTOOL_VERSION.tar.gz
+  wget http://ftp.gnu.org/gnu/libtool/libtool-$LIBTOOL_VERSION.tar.gz --no-check-certificate
 fi
 
 )

@@ -9,7 +9,7 @@ mkdir -p ${UBCESLAB_SWENV_PREFIX:?undefined}/sourcesdir/openblas
 
 (cd $UBCESLAB_SWENV_PREFIX/sourcesdir/openblas
 if [ ! -f v$OPENBLAS_VERSION.tar.gz  ]; then
-  wget https://github.com/xianyi/OpenBLAS/archive/v$OPENBLAS_VERSION.tar.gz 
+  wget https://github.com/xianyi/OpenBLAS/archive/v$OPENBLAS_VERSION.tar.gz --no-check-certificate
 fi
 )
 

@@ -11,7 +11,7 @@ mkdir -p ${UBCESLAB_SWENV_PREFIX:?undefined}/sourcesdir/gdb
 
 (cd $UBCESLAB_SWENV_PREFIX/sourcesdir/gdb
 if [ ! -f gdb-$GDB_VERSION.tar.gz ]; then
-  wget https://ftp.gnu.org/gnu/gdb/gdb-$GDB_VERSION.tar.gz
+  wget https://ftp.gnu.org/gnu/gdb/gdb-$GDB_VERSION.tar.gz --no-check-certificate
 fi
 )
 

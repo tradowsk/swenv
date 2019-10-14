@@ -10,7 +10,7 @@ mkdir -p ${UBCESLAB_SWENV_PREFIX:?undefined}/sourcesdir/cmake
 
 (cd $UBCESLAB_SWENV_PREFIX/sourcesdir/cmake
 if [ ! -f v$CMAKE_VERSION.tar.gz ]; then
-  wget https://github.com/Kitware/CMake/archive/v$CMAKE_VERSION.tar.gz 
+  wget https://github.com/Kitware/CMake/archive/v$CMAKE_VERSION.tar.gz --no-check-certificate
 fi
 )
 

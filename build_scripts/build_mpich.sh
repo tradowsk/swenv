@@ -9,7 +9,7 @@ mkdir -p ${UBCESLAB_SWENV_PREFIX:?undefined}/sourcesdir/mpich
 
 (cd $UBCESLAB_SWENV_PREFIX/sourcesdir/mpich
 if [ ! -f mpich-$MPICH_VERSION.tar.gz  ]; then
-  wget http://www.mpich.org/static/downloads/$MPICH_VERSION/mpich-$MPICH_VERSION.tar.gz 
+  wget http://www.mpich.org/static/downloads/$MPICH_VERSION/mpich-$MPICH_VERSION.tar.gz --no-check-certificate 
 fi
 )
 

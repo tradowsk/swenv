@@ -15,7 +15,7 @@ mkdir -p ${UBCESLAB_SWENV_PREFIX:?undefined}/sourcesdir/boost
 
 (cd $UBCESLAB_SWENV_PREFIX/sourcesdir/boost
 if [ ! -f boost_$BOOST_FILENAME.tar.bz2 ]; then
-  wget --output-document=boost_$BOOST_FILENAME.tar.bz2 http://sourceforge.net/projects/boost/files/boost/$BOOST_VERSION/boost_$BOOST_FILENAME.tar.bz2/download 
+  wget --output-document=boost_$BOOST_FILENAME.tar.bz2 http://sourceforge.net/projects/boost/files/boost/$BOOST_VERSION/boost_$BOOST_FILENAME.tar.bz2/download --no-check-certificate
 fi
 )
 
