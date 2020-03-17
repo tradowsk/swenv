@@ -29,7 +29,7 @@ echo "ATTENTION: Then, this script will set packages to install."
 echo "ATTENTION: You will need to agree that these packages get installed."
 echo ""
 echo "Press any key to continue with installation."
-read -n 1 -s
+#read -n 1 -s
 
 # Run Anaconda installer
 bash $UBCESLAB_SWENV_PREFIX/sourcesdir/anaconda/Miniconda-3.8.3-Linux-x86_64.sh
