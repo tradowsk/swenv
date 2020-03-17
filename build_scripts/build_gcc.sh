@@ -18,7 +18,10 @@ mkdir -p ${UBCESLAB_SWENV_PREFIX:?undefined}/sourcesdir/gcc
 
 (cd $UBCESLAB_SWENV_PREFIX/sourcesdir/gcc
 if [ ! -d gcc-$GCC_VERSION-src ]; then
-  svn co svn://gcc.gnu.org/svn/gcc/tags/gcc_$GCC_MAJOR\_$GCC_MINOR\_$GCC_MICRO\_release ./gcc-$GCC_VERSION-src
+  git clone git://gcc.gnu.org/git/gcc.git ./gcc-$GCC_VERSION-src
+  cd ./gcc-$GCC_VERSION-src
+  git checkout releases/gcc-$GCC_VERSION
+  cd ..
 fi
 )
 
